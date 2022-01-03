@@ -121,7 +121,7 @@ const Home: React.FC<{}> = () => {
     // const { userInfo } = globalState
 
     const [countdown, setTargetDate, formattedRes] = useCountdown({
-        targetDate: '2021-12-31 24:00:00',
+        targetDate: '2022-12-31 24:00:00',
         // targetDate: Date.now() + 5000,
         onEnd: person.sayHello,
     });
