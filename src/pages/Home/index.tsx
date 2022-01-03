@@ -1,5 +1,6 @@
 import React, { useRef, useMemo, useState, useEffect } from 'react'
 import dayjs from 'dayjs';
+import axios from 'axios';
 // import styles from './styles.module.scss'
 // import { Store as GlobalStore } from '../../hook.redux/global'
 
@@ -126,6 +127,12 @@ const Home: React.FC<{}> = () => {
         onEnd: person.sayHello,
     });
     const { days, hours, minutes, seconds, milliseconds } = formattedRes;
+
+    useEffect(() => {
+        axios.get('/api/users').then(data => {
+            console.log('users info:', data);
+        }).catch(err => console.log('user info get error:', err))
+    }, [])
 
     return (
         <>
