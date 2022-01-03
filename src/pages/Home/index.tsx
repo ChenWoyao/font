@@ -123,7 +123,6 @@ const Home: React.FC<{}> = () => {
 
     const [countdown, setTargetDate, formattedRes] = useCountdown({
         targetDate: '2022-12-31 24:00:00',
-        // targetDate: Date.now() + 5000,
         onEnd: person.sayHello,
     });
     const { days, hours, minutes, seconds, milliseconds } = formattedRes;
