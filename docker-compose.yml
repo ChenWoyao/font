@@ -1,5 +1,5 @@
 # 表示这是 compose 配置文件的版本
-version: '1.1'
+version: '2.2'
 # 每个服务都是一个 Docker 容器
 # 所以必须用 image 指定服务的镜像名或者从 Dockerfile 中 build 镜像
 services:
