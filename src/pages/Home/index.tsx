@@ -128,6 +128,7 @@ const Home: React.FC<{}> = () => {
     const { days, hours, minutes, seconds, milliseconds } = formattedRes;
 
     useEffect(() => {
+        // test
         axios.get('/api/users').then(data => {
             console.log('users info:', data);
         }).catch(err => console.log('user info get error:', err))
