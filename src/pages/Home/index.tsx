@@ -130,7 +130,7 @@ const Home: React.FC<{}> = () => {
     useEffect(() => {
         // test
         axios.get('/api/users').then(data => {
-            console.log('users info:', data);
+            console.log('user info:', data);
         }).catch(err => console.log('user info get error:', err))
     }, [])
 
